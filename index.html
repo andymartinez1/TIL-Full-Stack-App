@@ -15,11 +15,11 @@
           <img src="logo.png" alt="logo" />
           <h1>Today I Learned</h1>
         </div>
-        <button class="btn btn-large">Share a Fact</button>
+        <button class="btn btn-large btn-open">Share a Fact</button>
       </header>
 
       <!-- ADD FACT FORM -->
-      <form class="fact-form">
+      <form class="fact-form hidden">
         <input type="text" placeholder="Share a Fact" />
         <span>200</span>
         <input type="text" placeholder="Trustworthy Source URL" />
@@ -82,7 +82,7 @@
 
         <section>
           <!-- FACTS LIST -->
-          <ul>
+          <ul class="facts-list">
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
