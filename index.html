@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Today I Learned</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+          <h1>Today I Learned</h1>
+        </div>
+        <button class="btn btn-large">Share a Fact</button>
+      </header>
+
+      <!-- ADD FACT FORM -->
+      <form class="fact-form">
+        <input type="text" placeholder="Share a Fact" />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy Source URL" />
+        <select>
+          <option value="">Choose Category</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+
+      <main class="main">
+        <!-- FILTER BUTTON LIST -->
+        <aside>
+          <ul>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-technology">
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-science">
+                Science
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-finance">
+                Finance
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-society">
+                Society
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-entertainment">
+                Entertainment
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-health">
+                Health
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-history">
+                History
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-category-news">News</button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <!-- FACTS LIST -->
+          <ul>
+            <li class="fact">
+              <p>
+                React is being developed by Meta (formerly facebook)
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag">Technology</span>
+              <div class="vote-buttons">
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔ 4</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+                <a
+                  class="source"
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag">Society</span>
+              <div class="vote-buttons">
+                <button>👍 11</button>
+                <button>🤯 2</button>
+                <button>⛔ 0</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

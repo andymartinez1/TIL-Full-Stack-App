@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap");
+
+* {
+  /* Custom Colors */
+  --color-stone-light: #fafaf9;
+  --color-stone-light-2: #a8a29e;
+  --color-stone-dark: #78716c;
+  --color-stone-dark-1: #44403c;
+  --color-stone-dark-2: #292524;
+
+  /* Global Reset for Sizing */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Convert 1rem to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-stone-dark-2);
+  font-family: "Sono", sans-serif;
+  padding: 4.8rem 6.4rem;
+  color: var(--color-stone-light);
+}
+
+.container {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  gap: 4.8rem;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.logo img {
+  height: 6.8rem;
+  width: 6.8rem;
+}
+
+h1 {
+  font-family: "Coiny", sans-serif;
+  font-size: 4.2rem;
+  line-height: 1;
+  margin-top: 0.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-stone-light);
+}
+
+.fact-form {
+  margin-bottom: 4rem;
+  background-color: var(--color-stone-dark-1);
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+@media (max-width: 1050px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.fact-form input,
+.fact-form select {
+  width: 22rem;
+  background-color: var(--color-stone-dark);
+  border: none;
+  border-radius: 10rem;
+  padding: 1.6rem;
+  font-size: 1.8rem;
+  color: inherit;
+  font-family: inherit;
+}
+
+@media (max-width: 1050px) {
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
+
+.fact-form input::placeholder {
+  color: var(--color-stone-light-2);
+}
+
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-right: 1.8rem;
+}
+
+.fact {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: var(--color-stone-light);
+  letter-spacing: -1;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1.6rem;
+  background-color: var(--color-stone-dark-1);
+
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.2rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.category {
+  margin-bottom: 1.6rem;
+}
+
+.tag {
+  font-family: "Coiny", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-top: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10rem;
+  color: var(--color-stone-light);
+}
+
+.vote-buttons {
+  margin-left: auto;
+
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.8rem;
+}
+
+.vote-buttons button {
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10rem;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--color-stone-dark);
+}
+
+.vote-buttons button:hover {
+  background-color: var(--color-stone-dark-2);
+}
+
+.source:link,
+.source:visited {
+  text-decoration: none;
+  margin-left: 1.2rem;
+  transition: 0.3s;
+  color: #a8a29e;
+}
+
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  padding: 16px 0 13px;
+  transition: 0.3s;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 5rem;
+  background-image: linear-gradient(135deg, #3b82f6, #16a34a, #eab308, #ef4444);
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-1deg);
+}
+
+.btn-large {
+  font-size: 2rem;
+  padding: 2rem 3.2rem 1.7rem;
+}
+
+.btn-all-categories {
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+.btn-category-technology {
+  background-color: #3b82f6;
+}
+
+.btn-category-science {
+  background-color: #16a34a;
+}
+
+.btn-category-finance {
+  background-color: #ef4444;
+}
+
+.btn-category-society {
+  background-color: #eab308;
+}
+
+.btn-category-entertainment {
+  background-color: #db2777;
+}
+
+.btn-category-health {
+  background-color: #14b8a6;
+}
+
+.btn-category-history {
+  background-color: #f97316;
+}
+
+.btn-category-news {
+  background-color: #8b5cf6;
+}
